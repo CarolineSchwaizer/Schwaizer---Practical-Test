@@ -41,6 +41,8 @@ This project was created to analyze the data from a large sales dataset. First, 
 
 ## Getting Started
 Before executing the code, make sure that the necessary packages are installed, all files are in the same folder and the terminal is being executed in the same folder.
+It is necessary to download the .csv file from the following link: https://www.kaggle.com/datasets/carrie1/ecommerce-data
+The file should be saved in the same project directory and named 'data.csv'
 
 ## Project Requirements
 The following instructions were received:
