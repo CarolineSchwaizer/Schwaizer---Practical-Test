@@ -27,9 +27,34 @@ CREATE DATABASE data_engineer
 Schema and Table creation were generate inside the python file.
 
 ## Python Script
-The Python script ir organized as follows:
+The Python script is organized as follows:
 - main() function to orchestrate the entire process, containing all variables needed and the steps to be executed.
 - Every step has its own function, with the corresponding docString explaining the purpose of it, and the parameters needed
 
 ## Database INI Script
 File containing all information needed to connect to the Postgres database. This file MUST be in the .gitignore file for real projects, since it contains the information to access the database.
+
+<h3 align="center">Sales Data Transformation and Aggregation </h3>
+
+##  About
+This project was created to analyze the data from a large sales dataset. First, a .csv file is read using spark dataframe. The data types were adjusted and the missing values replaced by 0 in the CustomerID column. With the data cleaned and the right data types, a few analysis were made using PySpark language and printed in the screen (just for the purpose of the exercise, real pipelines should avoid unnecessary actions in a spark pipeline). Finally, the dataset is written into a Postgres Database. 
+
+## Getting Started
+Before executing the code, make sure that the necessary packages are installed, all files are in the same folder and the terminal is being executed in the same folder.
+
+## Project Requirements
+The following instructions were received:
+- Load the dataset into a PySpark DataFrame. 
+- Perform necessary data cleaning (e.g., handle missing values, correct data types). 
+- Calculate total sales and the number of transactions per day. 
+- Identify the top 10 products with the highest sales. 
+- Save the transformed data back to a SQL database. 
+
+## Python Script
+The Python script is organized as follows:
+- main() function to orchestrate the entire process, containing all variables needed and the steps to be executed.
+- Every step has its own function, with the corresponding docString explaining the purpose of it, and the parameters needed
+
+## Database INI Script
+File containing all information needed to connect to the Postgres database. This file MUST be in the .gitignore file for real projects, since it contains the information to access the database.
+
