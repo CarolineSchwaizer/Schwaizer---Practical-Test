@@ -1,20 +1,3 @@
-/* CREATE DATABASE statement cannot be executed with the python script, it was executed in the Postgres interface pgAdmin 4
-
-CREATE DATABASE data_engineer
-
-CREATE TABLE {table_name} (
-    InvoiceNo VARCHAR(7),
-    StockCode VARCHAR(6),
-    Description TEXT,
-    Quantity INTEGER,
-    InvoiceDate DATE,
-    UnitPrice FLOAT,
-    CustomerID VARCHAR(5),
-    Country VARCHAR
-)
-
-CREATE SCHEMA retail */
-
 WITH purchase_value AS(
 	SELECT 
 		customerid
